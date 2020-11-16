@@ -322,7 +322,7 @@ def dump_revision(mw_filename, md_filename, text, title):
             # which will insert the tag listing automatically
             # i.e. Behaves like MediaWiki for Category:XXX
             # where we mapped XXX as a tag in Jekyll
-            handle.write("layout: tagpage\n")
+            handle.write("layout: wiki\n")
             handle.write("tag: %s\n" % title[9:])
         else:
             # Note a category page,
